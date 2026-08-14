@@ -21,6 +21,20 @@ let value: number = -2;
 //Boolean:
 let isRaining: boolean = true;
 
+//undefined:
+let y: undefined;
+
+//null:
+let total: null = null;
+
 console.log(district, students, price, value, isRaining);
 
+//Inference:if we do not declare the type, TS automatically detects the type. Thats called inference.
+let firstName = "David";
+console.log(firstName);
 
+//any: can use any type. But its not a good practice.
+let totalValue: any = 23;
+totalValue = "Not Found";
+totalValue = false;
+console.log(totalValue);
