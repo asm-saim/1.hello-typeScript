@@ -1,6 +1,6 @@
-let info: { name: string; age: number; location: string } = {
+let person: { name: string; age: number; location: string } = {
   name: "JK",
   age: 56,
   location: "USA",
 };
-console.log(info);
+console.log(person);

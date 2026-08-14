@@ -1,7 +1,7 @@
 "use strict";
-let info = {
+let person = {
     name: "JK",
     age: 56,
     location: "USA",
 };
-console.log(info);
+console.log(person);
