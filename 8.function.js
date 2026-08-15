@@ -6,3 +6,11 @@ function sum(num1, num2) {
 }
 const result = sum(6, 4);
 console.log(result);
+//optional property and void(means noting):
+function calculate(numbers, value, name) {
+    numbers.push(value);
+    console.log(numbers);
+}
+let values = [34, 66, 33, 17, 45];
+let value = 67;
+calculate(values, value);
