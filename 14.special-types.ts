@@ -8,3 +8,10 @@ function info2(id: number | string) {
 
 console.log(info2(23));
 console.log(info2("code"));
+
+//unknown :I don't know the type. Check it before using it.
+let newValue: unknown = "Sakil";
+
+if (typeof newValue === "string") {
+  console.log(newValue.toUpperCase());
+}
