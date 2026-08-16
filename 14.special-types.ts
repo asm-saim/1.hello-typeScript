@@ -15,3 +15,26 @@ let newValue: unknown = "Sakil";
 if (typeof newValue === "string") {
   console.log(newValue.toUpperCase());
 }
+
+//null: there is intentionally no value.
+let profilePicture: string | null = null;
+
+//undefined :A value has not been provided/assigned.
+let name5: string | undefined;
+console.log(name5);
+
+//never: This can never successfully return/happen.
+function errorMessage(person: string): never {
+  throw new Error(person);
+}
+
+//any: Don't check this value's type.
+//Why is any dangerous? - Because it removes TypeScript's type safety.
+
+function typeRemoved(value9: any) {
+  return value9;
+}
+typeRemoved(23);
+typeRemoved("name");
+typeRemoved(true);
+typeRemoved(true);
