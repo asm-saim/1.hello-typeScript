@@ -24,8 +24,8 @@ let name5: string | undefined;
 console.log(name5);
 
 //never: This can never successfully return/happen.
-function errorMessage(person: string): never {
-  throw new Error(person);
+function error(): never {
+  throw new Error("Something went wrong");
 }
 
 //any: Don't check this value's type.
@@ -38,3 +38,13 @@ typeRemoved(23);
 typeRemoved("name");
 typeRemoved(true);
 typeRemoved(true);
+
+// void: The function finishes normally, but doesn't return a value.
+function notReturn(num1: number, num2: number): void {
+  console.log(num1 + num2);
+}
+notReturn(22, 28);
+
+//diff between void and never:
+// void: The function finishes normally, but doesn't return a value.
+//never:The function never successfully finishes.
